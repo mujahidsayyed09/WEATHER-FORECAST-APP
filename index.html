@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Forecast Application</title>
+    <link rel="stylesheet" href="./output.css">
+    <script src="./index.js" defer></script>
+</head>
+<body>
+    <!-- Main container with full height -->
+    <div class="flex flex-col h-screen p-2">
+        
+        <!-- Top Section -->
+        <div class="flex flex-row flex-1 bg-blue-600 p-4 gap-4">
+            
+            <!-- Search for city-wise Weather Report -->
+            <div class="flex flex-col flex-1 gap-2">
+                <label for="cityName">Enter CITY</label>
+                <input type="text" id="cityName" placeholder="Enter city name" class="border p-2">
+                <button id="searchBtn" class="bg-blue-500 text-white px-4 py-2">Search</button>
+                <button id="currentLocationBtn" class="text-white">USE CURRENT LOCATION</button>
+            </div>
+
+            <!-- Displaying Weather Report -->
+            <div class="bg-red-700 flex-1 flex flex-col items-center justify-center text-white p-4">
+                <h2 id="city">City: --</h2>
+                <p>Temperature: <span id="temp">--</span>°C</p>
+                <p>Condition: <span id="condition">--</span></p>
+            </div>
+
+        </div>
+
+        <!-- Bottom Section -->
+        <div class="flex flex-row flex-1 gap-4">
+            <div class="bg-green-500 flex-1 flex items-center justify-center">1</div>
+            <div class="bg-green-800 flex-1 flex items-center justify-center">2</div>
+            <div class="bg-green-950 flex-1 flex items-center justify-center">3</div>
+        </div>
+
+    </div>
+</body>
+</html>
