@@ -10,7 +10,7 @@ const dropdown = document.getElementById("dropdown");
 async function getWeather(query) {
     try {
         const response = await fetch(
-            `http://api.weatherapi.com/v1/forecast.json?key=${API_KEY}&q=${query}&days=5&aqi=no&alerts=no`
+            `https://api.weatherapi.com/v1/forecast.json?key=${API_KEY}&q=${query}&days=5&aqi=no&alerts=no`
         );
 
         if (!response.ok) {
